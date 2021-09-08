@@ -1,0 +1,25 @@
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th><input type="checkbox" name="chequi" [(ngModel)]="ponFondo"/> Haga clic aqui</th>
+      <th><div [class.fondo] = "ponFondo" >Este es un texto</div></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><div>{{mostrar ? 'Haga click en el check box' : 'Ya hizo click en el check box'}}</div></td>
+      <td><a [href]= "miUrl" target="_blank">{{miUrl}}</a></td>
+    </tr>
+    <tr>
+      <input type="text" name="pruebita" [(ngModel)]= "miTesto"/>
+      {{miTesto}}
+      <td><button class="btn btn-success" (click)="otroCambio()">xxx</button></td>
+      <td><div>{{mostrar ? 'halle no' : 'si no se'}}</div></td>
+    </tr>
+    <tr>
+      <td><button class="btn btn-danger" (click)="cambiar()">estoy perdido</button></td>
+      <td><div [hidden] = 'habilitar'>Texto cualquiera</div></td>
+    </tr>
+  </tbody>
+</table>
+
